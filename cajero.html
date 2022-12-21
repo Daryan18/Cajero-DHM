@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero DHM</title>
+    <script  type="module" src="cajero.js"></script>
+    <link rel="stylesheet" href="./cajero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="center-div">
+        <h1 id="name">DHM BANK</h1>
+        <div id="login-portal">
+            <h3>Iniciar Seción</h3><br>
+            <label>No.de cuenta:</label><br>
+            <input type="text" id="lAccNo" class="textbox-style margin-buttom-12" required><br>
+            <label>Pin:</label><br>
+            <input type="text" id="lAccPin" class="textbox-style margin-buttom-12" required><br>
+            <button id="login-btn" class="margin-buttom-12">Iniciar Seción</button><br>
+            <label id="swithToReg" class="switch">¿No tienes una cuenta? Regístrate</label>
+        </div><br>
+        <div id="register-portal">
+            <h3>Regístrate</h3><br>
+                <label>Nombre:</label><br>
+                <input type="text" id="rAccName" class="textbox-style margin-buttom-12" required><br>
+                <label>No.de cuenta</label><br>
+                <input type="text" id="rAccNo" class="textbox-style margin-buttom-12" required><br>
+                <label>Pin:</label><br>
+                <input type="text" id="rAccPin" class="textbox-style margin-buttom-12" required><br>
+                <label>Confirma tu Pin:</label><br>
+                <input type="text" id="rConAccPin" class="textbox-style margin-buttom-12" required><br>
+                <button id="register-btn" class="margin-buttom-12">Resgistrarse</button><br>
+                <label id="swithToLogin" class="switch">¿Ya tienes una cuenta? Inica Seción</label>
+        </div><br>
+        <div id="portal">
+            <label id="userName">...</label><br>
+            <label id="totalBal">...</label><br>
+            <div id="deposit-portal">
+                <h4>Depositar</h4><br>
+                <label>Monto:</label><br>
+                <input type="text" id="deposit-amt" class="textbox-style margin-buttom-12" required><br>
+                <button id="dep-submit">Depositar</button><br>
+            </div>
+
+            <div id="withdraw-portal">
+                <h4>Retirar</h4><br>
+                <label>Monto:</label><br>
+                <input type="text" id="withdraw-amt" class="textbox-style margin-buttom-12" required><br>
+                <button id="wit-submit">Retirar</button><br>
+            </div>
+            
+            <div id="options">
+            <h3>Por favor selecciona una opción</h3><br>
+            <button id="deposit-btn">Depositar</button>
+            <button id="withdraw-btn">Retirar</button>
+            </div>
+        </div>
+
+    </div>    
+</body>
+</html>
